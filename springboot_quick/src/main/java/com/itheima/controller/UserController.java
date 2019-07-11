@@ -18,6 +18,7 @@ public class UserController {
     @ResponseBody
     public List<User> show(){
         List<User> users = userMapper.queryUserList();
+        System.out.println("users");
         return users;
     }
 }
